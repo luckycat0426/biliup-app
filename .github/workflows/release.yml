@@ -42,7 +42,7 @@ jobs:
       - name: change release name
         if: matrix.platform == 'ubuntu-18.04'
         run: |
-          sed -i 's/biliup-app/biliup-app(For Deepin)/g' src-tauri/tauri.conf.json
+          sed -i 's/biliup-app/biliup-app-for-deepin/g' src-tauri/tauri.conf.json
       - uses: tauri-apps/tauri-action@v0 
         if: matrix.platform == 'ubuntu-18.04'
         env:
